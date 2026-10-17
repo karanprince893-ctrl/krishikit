@@ -1,0 +1,236 @@
+:root {
+  --font-display:
+    'Bricolage Grotesque', 'Noto Sans Kannada', 'Noto Sans Devanagari',
+    -apple-system, sans-serif;
+  --font-body:
+    'Hanken Grotesk', 'Noto Sans Kannada', 'Noto Sans Devanagari',
+    -apple-system, sans-serif;
+}
+body {
+  margin: 0;
+  background: var(--earth-mist);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--canopy-core);
+}
+a:hover {
+  color: var(--canopy-600);
+}
+button {
+  font-family: inherit;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.kk-vp::-webkit-scrollbar,
+.kk-rail::-webkit-scrollbar {
+  display: none;
+}
+input[type='range'] {
+  accent-color: var(--canopy-core);
+}
+:root {
+  --kk-fill: var(--canopy-core);
+  --kk-glass: rgba(243, 239, 230, 0.86);
+  --kk-page: var(--earth-mist);
+}
+[data-theme] {
+  color: var(--text-primary);
+}
+[data-theme='dark'] [data-root-light] {
+  --text-primary: rgb(26, 24, 20);
+  --text-secondary: rgb(74, 63, 53);
+  color: rgb(26, 24, 20);
+}
+[data-theme='dark'] {
+  color-scheme: dark;
+  --surface-canvas: rgb(20, 19, 16);
+  --surface-card: rgb(31, 29, 24);
+  --surface-media: rgb(41, 38, 32);
+  --earth-mist: rgb(38, 35, 30);
+  --border-default: rgb(60, 55, 47);
+  --earth-husk: rgb(72, 66, 57);
+  --surface-disabled: rgb(72, 66, 57);
+  --text-primary: rgb(243, 239, 230);
+  --text-secondary: rgb(184, 176, 161);
+  --canopy-core: rgb(127, 184, 154);
+  --canopy-100: rgb(36, 56, 46);
+  --canopy-300: rgb(78, 120, 98);
+  --border-focus: rgb(127, 184, 154);
+  --action-primary: rgb(47, 100, 80);
+  --kk-fill: rgb(47, 100, 80);
+  --surface-inverse: rgb(31, 74, 58);
+  --status-attention: rgb(62, 38, 27);
+  --kk-glass: rgba(20, 19, 16, 0.86);
+  --kk-page: rgb(10, 10, 8);
+}
+[data-theme='dark'] [data-keep-light] {
+  --canopy-core: rgb(31, 74, 58);
+  --action-primary: rgb(31, 74, 58);
+  --canopy-100: rgb(220, 230, 223);
+  --canopy-300: rgb(127, 184, 154);
+  --kk-fill: rgb(31, 74, 58);
+}
+@keyframes kkGrowY {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes kkGrowS {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes kkPop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes kkFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes kkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes kkRing {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+@keyframes kkHalo {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+@keyframes kkSway {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes kkFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes kkSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes kkDrop {
+  0% {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(26px);
+    opacity: 0;
+  }
+}
+@keyframes kkRise {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes kkDrift {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-220px);
+    opacity: 0;
+  }
+}
+@keyframes kkBar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes kkSunUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes kkTravel {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+  }
+}

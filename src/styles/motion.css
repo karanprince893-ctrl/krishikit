@@ -1,0 +1,31 @@
+/* Motion — "Purposeful, not decorative." Three signatures from the toolkit overview. */
+:root {
+  --motion-grow-duration: 600ms; /* @kind other */
+  --motion-grow-ease: cubic-bezier(
+    0,
+    0,
+    0.2,
+    1
+  ); /* @kind other */ /* ease-out */
+  --motion-connect-duration: 800ms; /* @kind other */
+  --motion-connect-ease: cubic-bezier(
+    0.34,
+    1.56,
+    0.64,
+    1
+  ); /* @kind other */ /* spring */
+  --motion-progress-duration: 1200ms; /* @kind other */
+  --motion-progress-ease: cubic-bezier(
+    0.65,
+    0,
+    0.35,
+    1
+  ); /* @kind other */ /* ease-in-out */
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-grow-duration: 0ms; /* @kind other */
+    --motion-connect-duration: 0ms; /* @kind other */
+    --motion-progress-duration: 0ms; /* @kind other */
+  }
+}

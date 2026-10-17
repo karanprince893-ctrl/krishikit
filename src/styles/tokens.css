@@ -1,0 +1,69 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --action-hover: var(--canopy-600); /* @kind color */
+  --action-primary: var(--canopy-core); /* @kind color */
+  --border-control: 1.5; /* @kind other */
+  --border-default-2: 1; /* @kind other */
+  --border-default: var(--earth-husk); /* @kind color */
+  --border-focus-2: 2; /* @kind other */
+  --border-focus: var(--canopy-core); /* @kind color */
+  --canopy-100: rgb(220, 230, 223); /* @kind color */
+  --canopy-300: rgb(127, 184, 154); /* @kind color */
+  --canopy-600: rgb(47, 100, 80); /* @kind color */
+  --canopy-800: rgb(22, 55, 41); /* @kind color */
+  --canopy-900: rgb(18, 48, 31); /* @kind color */
+  --canopy-core: rgb(31, 74, 58); /* @kind color */
+  --clay-core: rgb(216, 100, 60); /* @kind color */
+  --clay-light: rgb(229, 122, 82); /* @kind color */
+  --clay-wash: rgb(246, 220, 214); /* @kind color */
+  --connection-accent: var(--clay-core); /* @kind color */
+  --earth-bark: rgb(74, 63, 53); /* @kind color */
+  --earth-bone: rgb(243, 239, 230); /* @kind color */
+  --earth-husk: rgb(217, 211, 196); /* @kind color */
+  --earth-paper: rgb(251, 249, 244); /* @kind color */
+  --earth-soil: rgb(26, 24, 20); /* @kind color */
+  --earth-stone: rgb(138, 131, 118); /* @kind color */
+  --logo-minimum-width: 96; /* @kind other */
+  --radius-badge: 8;
+  --radius-card: 20;
+  --radius-control: 14;
+  --radius-media: 16;
+  --radius-pill: 999;
+  --radius-small: 12;
+  --root-pressed: var(--sprout-600); /* @kind color */
+  --root-surface: var(--sprout-core); /* @kind color */
+  --root-text: var(--sprout-ink); /* @kind color */
+  --size-control-large: 52;
+  --size-control-medium: 46;
+  --size-control-small: 36;
+  --size-icon: 24;
+  --size-touch-minimum: 44;
+  --space-0: 0;
+  --space-128: 128;
+  --space-12: 12;
+  --space-16: 16;
+  --space-18: 18;
+  --space-22: 22;
+  --space-24: 24;
+  --space-32: 32;
+  --space-48: 48;
+  --space-4: 4;
+  --space-64: 64;
+  --space-80: 80;
+  --space-8: 8;
+  --sprout-600: rgb(169, 201, 82); /* @kind color */
+  --sprout-core: rgb(198, 227, 106); /* @kind color */
+  --sprout-ink: rgb(59, 74, 26); /* @kind color */
+  --status-attention: var(--clay-wash); /* @kind color */
+  --status-available: var(--canopy-100); /* @kind color */
+  --surface-canvas: var(--earth-bone); /* @kind color */
+  --surface-card: var(--earth-paper); /* @kind color */
+  --surface-disabled: var(--earth-husk); /* @kind color */
+  --surface-inverse: var(--canopy-core); /* @kind color */
+  --text-disabled: var(--earth-stone); /* @kind color */
+  --text-inverse: var(--earth-bone); /* @kind color */
+  --text-primary: var(--earth-soil); /* @kind color */
+  --text-secondary: var(--earth-bark); /* @kind color */
+}

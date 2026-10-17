@@ -1,0 +1,19 @@
+/* Colors used in the .fig that are NOT bound to Figma Variables. Named here so consumers don't hard-code them. */
+:root {
+  --earth-mist: rgb(
+    232,
+    227,
+    215
+  ); /* media / illustration well, type-specimen card */
+  --earth-chalk: rgb(201, 194, 179); /* overline + footer copy on soil */
+  --earth-ash: rgb(163, 156, 142); /* footer meta on soil */
+  --canopy-mist: rgb(169, 196, 181); /* secondary copy on canopy surfaces */
+  --white: rgb(255, 255, 255);
+
+  /* Semantic convenience aliases */
+  --surface-media: var(--earth-mist);
+  --surface-dark: var(--earth-soil);
+  --text-on-dark-muted: var(--earth-chalk);
+  --border-on-dark: rgba(255, 255, 255, 0.4);
+  --nav-indicator: var(--clay-core);
+}

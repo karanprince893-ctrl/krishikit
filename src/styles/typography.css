@@ -1,0 +1,137 @@
+/* Rhiza type system — "Three voices. One language."
+   The .fig defines no Figma text styles; these 10 styles are transcribed verbatim from the
+   "Rhiza / Typography and geometry" specimen sheet (Type/Display … Type/Data / Default). */
+:root {
+  --font-display:
+    'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  --font-body:
+    'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:
+    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type/Display — editorial lead */
+  --type-display-size: 104px;
+  --type-display-line: 95.68px;
+  --type-display-weight: 700;
+  --type-display-tracking: -6.24px;
+  /* Type/Heading 1 — section heading */
+  --type-h1-size: 68px;
+  --type-h1-line: 68px;
+  --type-h1-weight: 700;
+  --type-h1-tracking: -3.06px;
+  /* Type/Heading 2 — feature heading */
+  --type-h2-size: 56px;
+  --type-h2-line: 56px;
+  --type-h2-weight: 700;
+  --type-h2-tracking: -2.24px;
+  /* Type/Heading 3 — card title */
+  --type-h3-size: 24px;
+  --type-h3-line: 26.4px;
+  --type-h3-weight: 600;
+  --type-h3-tracking: 0px;
+  /* Type/Body / Large — introduction */
+  --type-body-lg-size: 21px;
+  --type-body-lg-line: 32.55px;
+  --type-body-lg-weight: 400;
+  /* Type/Body / Default — reading & explanation */
+  --type-body-size: 17px;
+  --type-body-line: 27.2px;
+  --type-body-weight: 400;
+  /* Type/Body / Small — helper & metadata */
+  --type-body-sm-size: 13px;
+  --type-body-sm-line: 19.5px;
+  --type-body-sm-weight: 400;
+  /* Type/Label / Action — button & field label */
+  --type-label-size: 14px;
+  --type-label-line: 21px;
+  --type-label-weight: 600;
+  /* Type/Overline / Token — uppercase taxonomy */
+  --type-overline-size: 11px;
+  --type-overline-line: 16px;
+  --type-overline-weight: 500;
+  --type-overline-tracking: 1.1px;
+  /* Type/Data / Default — prices & measurements */
+  --type-data-size: 32px;
+  --type-data-line: 40px;
+  --type-data-weight: 500;
+
+  /* Guide annotation (mono 11/17 · 500 · 0.5 tracking) used across toolkit sheets */
+  --type-annotation-size: 11px;
+  --type-annotation-line: 17px;
+  --type-annotation-tracking: 0.5px;
+}
+
+.rz-display {
+  font-family: var(--font-display);
+  font-size: var(--type-display-size);
+  line-height: var(--type-display-line);
+  font-weight: 700;
+  letter-spacing: var(--type-display-tracking);
+}
+.rz-h1 {
+  font-family: var(--font-display);
+  font-size: var(--type-h1-size);
+  line-height: var(--type-h1-line);
+  font-weight: 700;
+  letter-spacing: var(--type-h1-tracking);
+}
+.rz-h2 {
+  font-family: var(--font-display);
+  font-size: var(--type-h2-size);
+  line-height: var(--type-h2-line);
+  font-weight: 700;
+  letter-spacing: var(--type-h2-tracking);
+}
+.rz-h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-h3-size);
+  line-height: var(--type-h3-line);
+  font-weight: 600;
+}
+.rz-body-lg {
+  font-family: var(--font-body);
+  font-size: var(--type-body-lg-size);
+  line-height: var(--type-body-lg-line);
+  font-weight: 400;
+}
+.rz-body {
+  font-family: var(--font-body);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-line);
+  font-weight: 400;
+}
+.rz-body-sm {
+  font-family: var(--font-body);
+  font-size: var(--type-body-sm-size);
+  line-height: var(--type-body-sm-line);
+  font-weight: 400;
+}
+.rz-label {
+  font-family: var(--font-body);
+  font-size: var(--type-label-size);
+  line-height: var(--type-label-line);
+  font-weight: 600;
+}
+.rz-overline {
+  font-family: var(--font-mono);
+  font-size: var(--type-overline-size);
+  line-height: var(--type-overline-line);
+  font-weight: 500;
+  letter-spacing: var(--type-overline-tracking);
+  text-transform: uppercase;
+}
+.rz-data {
+  font-family: var(--font-mono);
+  font-size: var(--type-data-size);
+  line-height: var(--type-data-line);
+  font-weight: 500;
+}
+.rz-annotation {
+  font-family: var(--font-mono);
+  font-size: var(--type-annotation-size);
+  line-height: var(--type-annotation-line);
+  font-weight: 500;
+  letter-spacing: var(--type-annotation-tracking);
+  text-transform: uppercase;
+}

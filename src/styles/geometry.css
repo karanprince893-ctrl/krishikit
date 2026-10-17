@@ -1,0 +1,38 @@
+/* Length-typed mirrors of the unitless "Rhiza / Geometry" Figma variables in fig-tokens.css.
+   Use these in CSS; the unitless originals stay for calc() and parity with Figma. */
+:root {
+  --sp-0: 0px;
+  --sp-4: 4px;
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-18: 18px; /* source control inset */
+  --sp-22: 22px; /* source card inset */
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-48: 48px;
+  --sp-64: 64px;
+  --sp-80: 80px;
+  --sp-128: 128px;
+
+  --r-badge: 8px;
+  --r-small: 12px;
+  --r-control: 14px;
+  --r-media: 16px;
+  --r-card: 20px;
+  --r-pill: 999px;
+
+  --bw-default: 1px;
+  --bw-control: 1.5px;
+  --bw-focus: 2px;
+
+  --h-control-sm: 36px;
+  --h-control-md: 46px;
+  --h-control-lg: 52px;
+  --size-icon-px: 24px;
+  --size-touch-px: 44px;
+  --logo-min-width-px: 96px;
+
+  /* Elevation is restrained: surfaces separate with a husk border, not a shadow. The one shadow in the file: */
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
